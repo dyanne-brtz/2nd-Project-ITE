@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="music.css">
+</head>
+<body class="music-page">
+
+    <main class="music-container" style="padding-top: 50px;">
+        <section class="lyrics-view" style="margin-top: 0; border: none; background: transparent; padding: 0;">
+            <a href="index.html" class="lyrics-back" style="text-decoration: none; display: inline-block;">← Back to My Songs</a>
+
+            <div class="lyrics-content">
+                <div class="custom-player">
+                    <audio id="audio-player"></audio>
+                    <div class="player-info">
+                        <p class="music-eyebrow">NOW PLAYING</p>
+                        <h2 id="lyrics-title">Loading...</h2>
+                        <p id="lyrics-artist">Loading...</p>
+                    </div>
+                    <div class="player-controls">
+                        <button id="play-btn" class="ctrl-btn">▶</button>
+                    </div>
+                </div>
+                <div class="lyrics-text" id="lyrics-text"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="music.js"></script>
+</body>
+</html>
