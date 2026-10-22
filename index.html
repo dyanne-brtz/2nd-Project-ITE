@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="music.css">
 </head>
-<body class="music-page" style="padding-top: 60px;">
+<body class="music-page">
 
-<div style="position: fixed; top: 0; left: 0; width: 100%; padding: 15px 7%; background: rgba(9, 6, 9, 0.95); border-bottom: 1px solid rgba(232, 160, 176, 0.25); z-index: 9999;">
-    <a href="https://dyanne-brtz.github.io/MY-PORTFOLIO-ITE/projects.html" style="color: #e8a0b0; text-decoration: none; font-size: 1rem; font-weight: bold; font-family: Arial, sans-serif;">← Back to Projects</a>
+<div style="padding: 20px 7%; background: rgba(9, 6, 9, 0.95); border-bottom: 1px solid rgba(232, 160, 176, 0.25); width: 100%;">
+    <a href="https://dyanne-brtz.github.io/MY-PORTFOLIO-ITE/projects.html" style="color: #e8a0b0; text-decoration: none; font-size: 0.95rem; font-weight: bold; font-family: Arial, sans-serif;">← Back to Projects</a>
+</div>
+
+<div class="theme-toggle-container">
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+    </button>
 </div>
 
     <header class="music-header">
@@ -49,50 +56,41 @@
             </div>
 
             <div class="music-grid">
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('Britney Spears - Lucky (Lyrics).mp3', this)">
                      <div class="album-cover cover-1"><img src="01.jpg" alt="Lucky"></div>
                     <div class="song-info"><h3>Lucky</h3><p>Britney Spears</p></div>
-                    <a href="lyrics.html?song=lucky" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('Kehlani - Unlearn (Official Audio).mp3', this)">
                     <div class="album-cover cover-2"><img src="02.jpg" alt="Unlearn"></div>
                     <div class="song-info"><h3>Unlearn</h3><p>Kehlani</p></div>
-                    <a href="lyrics.html?song=unlearn" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('Denise Julia - NVMD (Lyrics).mp3', this)">
                     <div class="album-cover cover-3"><img src="03.jpg" alt="NMVD"></div>
                     <div class="song-info"><h3>NVMD</h3><p>Denise Julia</p></div>
-                    <a href="lyrics.html?song=nmvd" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('Doja Cat - Streets (Lyrics).mp3', this)">
                     <div class="album-cover cover-4"><img src="04.jpg" alt="Streets"></div>
                     <div class="song-info"><h3>Streets</h3><p>Doja Cat</p></div>
-                    <a href="lyrics.html?song=streets" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('JENNIE Mantra Lyrics.mp3', this)">
                     <div class="album-cover cover-5"><img src="05.jpg" alt="Mantra"></div>
                     <div class="song-info"><h3>Mantra</h3><p>Jennie Kim</p></div>
-                    <a href="lyrics.html?song=song-five" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('ADÉLA - Nicole Kidman.mp3', this)">
                     <div class="album-cover cover-6"><img src="06.jpg" alt="Nikole Kidman"></div>
                     <div class="song-info"><h3>Nikole Kidman</h3><p>ADELA</p></div>
-                    <a href="lyrics.html?song=nikolen-kidman" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('Ariana Grande - 7 rings (Lyrics).mp3', this)">
                     <div class="album-cover cover-7"><img src="07.jpg" alt="7 Rings"></div>
                     <div class="song-info"><h3>7 Rings</h3><p>Ariana Grande</p></div>
-                    <a href="lyrics.html?song=7-rings" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('NIKI - SEE U NEVER (LYRICS).mp3', this)">
                     <div class="album-cover cover-8"><img src="08.jpg" alt="See U Never"></div>
                     <div class="song-info"><h3>See U Never</h3><p>NIKI</p></div>
-                    <a href="lyrics.html?song=see-u-never" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
-                <article class="music-card">
+                <article class="music-card" onclick="playSong('Faith Evans - Soon as I Get Home (Throwback).mp3', this)">
                     <div class="album-cover cover-9"><img src="09.jpg" alt="Soon As I Get Home"></div>
                     <div class="song-info"><h3>Soon As I Get Home</h3><p>Faith Evans</p></div>
-                    <a href="lyrics.html?song=soon-as-i-get-home" class="lyrics-button" style="text-align: center; text-decoration: none; display: block;">View Lyrics ↗</a>
                 </article>
             </div>
         </section>
@@ -101,6 +99,141 @@
     <footer class="music-footer">
         <p>Made with love, music, and a little mystery.</p>
     </footer>
+
+    <div class="bottom-player">
+        <div class="player-progress-container">
+            <input type="range" id="seek-bar" value="0" max="100" step="0.1">
+        </div>
+        <div class="player-time">
+            <span id="current-time">0:00</span>
+            <span id="total-time">0:00</span>
+        </div>
+        <div class="player-controls">
+            <button class="icon-btn" id="shuffle-btn" title="Shuffle">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+            </button>
+            <button class="icon-btn" id="prev-btn" title="Previous">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+            </button>
+            <button class="main-play-btn" id="main-play-btn" title="Play/Pause">
+                <svg viewBox="0 0 24 24" fill="currentColor" id="main-play-icon"><path d="M8 5v14l11-7z"/></svg>
+            </button>
+            <button class="icon-btn" id="next-btn" title="Next">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+            </button>
+            <button class="icon-btn" id="timer-btn" title="Sleep Timer">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </button>
+        </div>
+        <div class="player-bottom-controls">
+            <button class="icon-btn" title="Lyrics">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            </button>
+            <div style="display: flex; gap: 20px;">
+                <button class="icon-btn" title="Share">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+                </button>
+                <button class="icon-btn" title="Queue">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-player"></audio>
+
+    <script>
+        const audio = document.getElementById('audio-player');
+        const mainPlayBtn = document.getElementById('main-play-btn');
+        const mainPlayIcon = document.getElementById('main-play-icon');
+        const seekBar = document.getElementById('seek-bar');
+        const currentTimeEl = document.getElementById('current-time');
+        const totalTimeEl = document.getElementById('total-time');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        
+        let currentSongIndex = -1;
+        let songs = [
+            'Britney Spears - Lucky (Lyrics).mp3',
+            'Kehlani - Unlearn (Official Audio).mp3',
+            'Denise Julia - NVMD (Lyrics).mp3',
+            'Doja Cat - Streets (Lyrics).mp3',
+            'JENNIE Mantra Lyrics.mp3',
+            'ADÉLA - Nicole Kidman.mp3',
+            'Ariana Grande - 7 rings (Lyrics).mp3',
+            'NIKI - SEE U NEVER (LYRICS).mp3',
+            'Faith Evans - Soon as I Get Home (Throwback).mp3'
+        ];
+
+        const playIcon = '<path d="M8 5v14l11-7z"/>';
+        const pauseIcon = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+
+        function playSong(src, cardElement) {
+            const index = songs.indexOf(src);
+            if (index !== -1) {
+                currentSongIndex = index;
+                audio.src = src;
+                audio.play();
+                mainPlayIcon.innerHTML = pauseIcon;
+                
+                document.querySelectorAll('.music-card').forEach(c => c.style.borderColor = '#30131e');
+                if(cardElement) cardElement.style.borderColor = '#a41635';
+            }
+        }
+
+        mainPlayBtn.addEventListener('click', () => {
+            if (audio.paused) {
+                if (!audio.src) {
+                    playSong(songs[0]);
+                } else {
+                    audio.play();
+                }
+                mainPlayIcon.innerHTML = pauseIcon;
+            } else {
+                audio.pause();
+                mainPlayIcon.innerHTML = playIcon;
+            }
+        });
+
+        audio.addEventListener('timeupdate', () => {
+            if (!isNaN(audio.duration)) {
+                const progress = (audio.currentTime / audio.duration) * 100;
+                seekBar.value = progress;
+                currentTimeEl.textContent = formatTime(audio.currentTime);
+                totalTimeEl.textContent = formatTime(audio.duration);
+            }
+        });
+
+        seekBar.addEventListener('input', () => {
+            const time = (seekBar.value / 100) * audio.duration;
+            audio.currentTime = time;
+        });
+
+        audio.addEventListener('ended', () => {
+            mainPlayIcon.innerHTML = playIcon;
+            if (currentSongIndex < songs.length - 1) {
+                playSong(songs[currentSongIndex + 1]);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSongIndex < songs.length - 1) {
+                playSong(songs[currentSongIndex + 1]);
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSongIndex > 0) {
+                playSong(songs[currentSongIndex - 1]);
+            }
+        });
+
+        function formatTime(seconds) {
+            const min = Math.floor(seconds / 60);
+            const sec = Math.floor(seconds % 60);
+            return min + ':' + (sec < 10 ? '0' : '') + sec;
+        }
+    </script>
 
     <script src="theme.js"></script>
 </body>
